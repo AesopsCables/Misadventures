@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cables.aesops.com.playground.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/Ready"
+        app:showAsAction="never"
+        android:visible="true"
+        android:enabled="true"
+        android:checkable="true" />
+    <item
+        android:id="@+id/action_settings2"
+        android:orderInCategory="101"
+        android:title="@string/Aim"
+        app:showAsAction="never"
+        android:visible="true"
+        android:enabled="true"
+        android:checkable="true" />
+    <item
+        android:id="@+id/action_settings3"
+        android:orderInCategory="102"
+        android:title="@string/Fire"
+        app:showAsAction="never"
+        android:visible="true"
+        android:enabled="true"
+        android:checkable="true" />
+</menu>
