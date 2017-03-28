@@ -155,6 +155,7 @@ public class StarterActivity extends AppCompatActivity implements LoaderCallback
         // Store values at the time of the login attempt.
         String email = mEmailView.getText().toString();
         String password = mPasswordView.getText().toString();
+        //TODO: Is this where I can hijack the text entry and save it for another activity?
 
         boolean cancel = false;
         View focusView = null;
@@ -165,9 +166,9 @@ public class StarterActivity extends AppCompatActivity implements LoaderCallback
             focusView = mPasswordView;
             cancel = true;
         }
-
+//TODO: Re-add validation on names for whatever constraints I want. Maybe add picky things like capitalization mandatory? Tweak the keyboard to start in lowercase?
         // Check for a valid email address.
-        if (TextUtils.isEmpty(email)) {
+/*        if (TextUtils.isEmpty(email)) {
             mEmailView.setError(getString(R.string.error_field_required));
             focusView = mEmailView;
             cancel = true;
@@ -175,7 +176,7 @@ public class StarterActivity extends AppCompatActivity implements LoaderCallback
             mEmailView.setError(getString(R.string.error_invalid_email));
             focusView = mEmailView;
             cancel = true;
-        }
+        }*/
 
         if (cancel) {
             // There was an error; don't attempt login and focus the first
