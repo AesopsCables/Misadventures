@@ -166,9 +166,9 @@ public class StarterActivity extends AppCompatActivity implements LoaderCallback
             focusView = mPasswordView;
             cancel = true;
         }
-//TODO: Re-add validation on names for whatever constraints I want. Maybe add picky things like capitalization mandatory? Tweak the keyboard to start in lowercase?
+//TODO: Re-add validation on names for whatever constraints I want. Maybe add picky things like capitalization mandatory? Tweak the keyboard to start in lowercase? What you're looking for is isBlahValid under these two methods
         // Check for a valid email address.
-/*        if (TextUtils.isEmpty(email)) {
+        if (TextUtils.isEmpty(email)) {
             mEmailView.setError(getString(R.string.error_field_required));
             focusView = mEmailView;
             cancel = true;
@@ -176,7 +176,7 @@ public class StarterActivity extends AppCompatActivity implements LoaderCallback
             mEmailView.setError(getString(R.string.error_invalid_email));
             focusView = mEmailView;
             cancel = true;
-        }*/
+        }
 
         if (cancel) {
             // There was an error; don't attempt login and focus the first
@@ -192,12 +192,12 @@ public class StarterActivity extends AppCompatActivity implements LoaderCallback
     }
 
     private boolean isEmailValid(String email) {
-        //TODO: Replace this with your own logic
+        //TODO: It'd be nifty if I could figure out how to check if a name contains a capital letter
         return email.contains("@");
     }
 
     private boolean isPasswordValid(String password) {
-        //TODO: Replace this with your own logic
+        //TODO: At this point, I need to rename all this logic. "Secret" and whathaveyou
         return password.length() > 4;
     }
 
