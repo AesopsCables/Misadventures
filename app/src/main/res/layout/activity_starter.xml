@@ -11,6 +11,8 @@
     tools:context="cables.aesops.com.playground.StarterActivity">
 
     <!-- Login progress -->
+
+    //TODO: Take out the prompt for access to contacts 1. on this page, and 2. on the app at a whole so I know how to do it
     <ProgressBar
         android:id="@+id/login_progress"
         style="?android:attr/progressBarStyleLarge"
